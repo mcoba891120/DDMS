@@ -1,0 +1,14 @@
+name: DDMS
+channels:
+  - conda-forge
+dependencies:
+  - python=3.8
+  - vtk
+  - pip
+  - pip:
+      # Editable install of this repo pulls in the pinned, curated dependency
+      # list from ../pyproject.toml (core deps) plus the [surrogate] extra
+      # (torch / torch_geometric / mlflow / wandb / shap) needed for model
+      # training. GPU builds of torch should be installed separately per
+      # https://pytorch.org/get-started/locally/ before running this file.
+      - -e ..[surrogate,dev]

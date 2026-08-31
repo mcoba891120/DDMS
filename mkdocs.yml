@@ -1,0 +1,99 @@
+site_name: PyDDMS
+site_description: "Data-Driven Multiscale Simulation"
+copyright:  |
+  &copy; 2023 <a href="https://github.com/KyleChien"  target="_blank" rel="noopener">Kyle Chien</a>
+# edit_uri: docs/
+
+theme:
+  name: material
+  features:
+    - announce.dismiss
+    - content.action.edit
+    - content.action.view
+    - content.code.annotate
+    - content.code.copy
+    - content.tooltips
+    - navigation.footer
+    - navigation.indexes
+    - navigation.sections
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.top
+    - search.highlight
+    - search.suggest
+    - toc.follow
+  language: en
+  palette:
+    - media: "(prefers-color-scheme)"
+      toggle:
+        icon: material/brightness-auto
+        name: Switch to light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: teal
+      accent: purple
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: black
+      accent: lime
+      toggle:
+        icon: material/weather-night
+        name: Switch to system preference
+
+nav:
+  - Usage:
+    - usage/index.md
+    - usage/microstructure_preprocessing.md
+    - usage/constitutive_parameter_derivation.md
+    - usage/microstructure_sythesis.md
+    - usage/stress-strain_curve_visualization.md
+    - usage/graph_based_dataset_generation.md
+    - usage/surrogate_model_training.md
+    - usage/gnn_surrogate_model.md
+    - usage/hyperparameter_tuning.md
+    - usage/remote_watcher.md
+
+markdown_extensions:
+- attr_list
+- def_list
+- md_in_html
+- admonition
+- footnotes
+- markdown_katex
+- neoteroi.cards:
+    blank_target: true
+- pymdownx.emoji:
+    emoji_index: !!python/name:materialx.emoji.twemoji
+    emoji_generator: !!python/name:materialx.emoji.to_svg
+- pymdownx.details
+- pymdownx.magiclink
+- pymdownx.snippets:
+    check_paths: true
+- pymdownx.superfences
+- pymdownx.tabbed:
+    alternate_style: true
+    slugify: !!python/object/apply:pymdownx.slugs.slugify
+      kwds:
+        case: lower
+- pymdownx.tasklist:
+    custom_checkbox: true
+- toc:
+    permalink: "¤"
+
+
+plugins:
+- search
+
+# extra_javascript: 
+#     - https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML
+
+extra:
+  social:
+    - icon: fontawesome/brands/github-alt
+      link: https://github.com/KyleChien/DDMS_public
+
+
+  

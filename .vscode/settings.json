@@ -1,0 +1,19 @@
+{
+    "fortran.ignoreWarning.fortls": true,
+    "fortran.fortls.disabled": true,
+    "git.ignoreLimitWarning": true,
+    "python.analysis.extraPaths": [
+        "./python"
+    ],
+    "files.associations": {
+        "iostream": "cpp",
+        "ostream": "cpp",
+        "vector": "cpp",
+        "string": "cpp",
+        "memory": "cpp"
+    },
+    "docify.commentService.sidePanelReviewMode": false,
+    "docify.commentService.docstringFormat": "Google",
+    "docify.translateService.docstringFormat": "Google",
+    "docify.commentService.inlineComments": false
+}
